@@ -10,6 +10,34 @@ And I have also entered 51
 When I press add 
 Then the result should be 121
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@add
+Scenario: Clear value
+Given I have entered 34
+And I clear value
+When I press add 
+Then the result should be 0
+
+
 Scenario Outline: Add two numbers
 Given I have entered <num1>
 And I have also entered <num2>
